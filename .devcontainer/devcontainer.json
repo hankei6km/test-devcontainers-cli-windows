@@ -7,7 +7,6 @@
       "VARIANT": "node"
     }
   },
-  "workspaceFolder": "/workspace",
   "extensions": ["esbenp.prettier-vscode"],
   "settings": {
     "[typescript]": {
