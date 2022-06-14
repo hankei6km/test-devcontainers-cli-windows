@@ -35,4 +35,4 @@ jobs:
         run: devcontainer up --workspace-folder .
 
       - name: Exec command
-        run: devcontainer exec --workspace-folder . ls
+        run: devcontainer exec --workspace-folder . ls /
