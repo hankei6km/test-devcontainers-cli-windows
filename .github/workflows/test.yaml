@@ -32,7 +32,9 @@ jobs:
         run: npm install -g @devcontainers/cli
 
       - name: Start devcontainer
-        run: DOCKER_BUILDKIT=0 devcontainer up --workspace-folder . --config .devcontainer/windows/devcontainer.json
+        run: |
+          $Env:DOCKER_BUILDKIT = "0"
+          devcontainer up --workspace-folder . --config .devcontainer/windows/devcontainer.json
 
       - name: Exec command
         run: devcontainer exec --workspace-folder . --config .devcontainer/windows/devcontainer.json ls /
