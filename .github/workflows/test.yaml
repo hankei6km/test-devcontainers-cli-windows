@@ -34,5 +34,5 @@ jobs:
       - name: Start devcontainer
         run: devcontainer up --workspace-folder .
 
-      - name: Install modules
+      - name: Exec command
         run: devcontainer exec --workspace-folder . ls
