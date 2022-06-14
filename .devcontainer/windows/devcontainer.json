@@ -1,0 +1,30 @@
+{
+  "name": "node",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "args": {
+      "IMAGE": "mcr.microsoft.com/windows/servercore",
+      "VARIANT": "ltsc2022"
+    }
+  },
+  "workspaceMount": "type=bind,source=D:\\a\\test-devcontainers-cli-windows\\test-devcontainers-cli-windows,target=c:\\workspace",
+  "workspaceFolder": "c:\\workspace",
+  "extensions": ["esbenp.prettier-vscode"],
+  "settings": {
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
+}

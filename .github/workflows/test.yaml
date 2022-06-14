@@ -7,15 +7,15 @@ on:
       - "!v*"
 jobs:
   jest:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Use Node.js 14.x to run @devcontainers/cli
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
+      # - name: Use Node.js 14.x to run @devcontainers/cli
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: 14.x
 
       - name: Cache node modules
         uses: actions/cache@v2
@@ -32,7 +32,7 @@ jobs:
         run: npm install -g @devcontainers/cli
 
       - name: Start devcontainer
-        run: devcontainer up --workspace-folder .
+        run: devcontainer up --workspace-folder . --config .devcontainer/windows/devcontainer.json
 
       - name: Exec command
-        run: devcontainer exec --workspace-folder . ls /
+        run: devcontainer exec --workspace-folder . --config .devcontainer/windows/devcontainer.json ls /
