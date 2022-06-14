@@ -7,7 +7,7 @@
       "VARIANT": "ltsc2022"
     }
   },
-  "workspaceMount": "target=/workspace,type=tmpfsd",
+  "workspaceMount": "target=/workspace,type=tmpfs",
   "workspaceFolder": "/workspace",
   "extensions": ["esbenp.prettier-vscode"],
   "settings": {
