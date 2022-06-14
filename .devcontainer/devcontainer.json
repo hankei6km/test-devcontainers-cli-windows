@@ -1,0 +1,29 @@
+{
+  "name": "node",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "IMAGE": "ghcr.io/hankei6km/h6-dev-containers",
+      "VARIANT": "node"
+    }
+  },
+  "workspaceFolder": "/workspace",
+  "extensions": ["esbenp.prettier-vscode"],
+  "settings": {
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
+}
