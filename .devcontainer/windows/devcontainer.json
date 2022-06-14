@@ -7,8 +7,8 @@
       "VARIANT": "ltsc2022"
     }
   },
-  "workspaceMount": "target=d:\\workspace,type=tmpfs",
-  "workspaceFolder": "d:\\workspace",
+  "workspaceMount": "type=bind,source=D:\\a\\test-devcontainers-cli-windows\\test-devcontainers-cli-windows,target=c:\\workspace",
+  "workspaceFolder": "c:\\workspace",
   "extensions": ["esbenp.prettier-vscode"],
   "settings": {
     "[typescript]": {
